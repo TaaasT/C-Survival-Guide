@@ -14,7 +14,7 @@ public class ChallangeVariables : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("My name is " + myName + "and my age is " + myAge);//etc
+        Debug.Log("My name is " + myName + " and my age is " + myAge);//etc
     }
 
     // Update is called once per frame
