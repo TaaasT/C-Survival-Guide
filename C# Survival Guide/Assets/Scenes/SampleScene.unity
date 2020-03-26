@@ -230,12 +230,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1769799432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c2a4583a6fba049a4de80210845694, type: 3}
+  m_Script: {fileID: 11500000, guid: 43b9857c6db8c1541ae48c707020ac27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bill: 40
-  tip: 30
-  total: 0
+  quiz1: 0
+  quiz2: 0
+  quiz3: 0
+  quiz4: 0
+  quiz5: 0
 --- !u!4 &1769799434
 Transform:
   m_ObjectHideFlags: 0
