@@ -230,13 +230,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1769799432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bb77fa2101f1b84a9b1b6c77e7ce3ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 45c2a4583a6fba049a4de80210845694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Sword
-  itemDescription: This is a Power Sword.
-  itemIcon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  attackStrenght: 15
+  bill: 40
+  tip: 30
+  total: 0
 --- !u!4 &1769799434
 Transform:
   m_ObjectHideFlags: 0
