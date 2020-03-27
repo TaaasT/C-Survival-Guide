@@ -8,6 +8,9 @@ public class Challenge1 : MonoBehaviour
     [SerializeField] int score;
     [SerializeField] int points = 10;
 
+    bool hasSaid;
+    
+    
     void Start()
     {
         
@@ -21,9 +24,10 @@ public class Challenge1 : MonoBehaviour
             score += points;
         }
 
-        if(score >= 50)
+        if(score >= 50 && hasSaid)
         {
             Debug.Log("You are awsome");
+            hasSaid = true;
         }
     }
 }
