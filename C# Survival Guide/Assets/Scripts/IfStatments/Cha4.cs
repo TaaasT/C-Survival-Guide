@@ -30,7 +30,7 @@ public class Cha4 : MonoBehaviour
             speed -= 5;
         }
 
-        if(speed >= 20)
+        if(speed > 20)
         {
             Debug.Log("Slow Down");
         }
