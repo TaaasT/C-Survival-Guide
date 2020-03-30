@@ -230,25 +230,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1769799432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1becc51d3f65ff74fa9bec733e066ca5, type: 3}
+  m_Script: {fileID: 11500000, guid: 33c74c89744407a45906b7ef6fa9a608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myItems:
-  - itemID: 0
-    name: NULL
-    description: NULL
-  - itemID: 1
-    name: sword
-    description: This is a magical sword
-  - itemID: 2
-    name: bread
-    description: I can eat this
-  - itemID: 3
-    name: cape
-    description: Wonderful looking cape
-  - itemID: 4
-    name: Spear
-    description: It has a sharp point
+  cubes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &1769799434
 Transform:
   m_ObjectHideFlags: 0

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ArraysCha3 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject[] cubes;
+
     void Start()
     {
         
@@ -13,6 +14,20 @@ public class ArraysCha3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            foreach(var cube in cubes)
+            {
+                cube.GetComponent<MeshRenderer>().material.color = Color.red;
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            for (int i = 0; i < cubes.Length; i++)
+            {
+                cubes[i].GetComponent<MeshRenderer>().material.color = Color.blue;
+            }
+        }
     }
 }
