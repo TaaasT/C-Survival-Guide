@@ -233,6 +233,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35952eac05679d745bbcf92d4f8ddb60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  names:
+  - Josh
+  - Anna
+  - Jacob
+  - Jonathan
+  - Emil
+  age: 0c00000054000000410000002d0000001e000000
+  carmodel:
+  - Saab
+  - Volvo
+  - Mercedes
+  - Nissan
+  - Bmw
 --- !u!4 &1769799434
 Transform:
   m_ObjectHideFlags: 0
