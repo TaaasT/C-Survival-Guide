@@ -310,6 +310,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef47689648814694f9d0f69e04c2da65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory:
+  - itemName: 
+    id: 0
+    icon: {fileID: 0}
+  - itemName: 
+    id: 0
+    icon: {fileID: 0}
+  - itemName: 
+    id: 0
+    icon: {fileID: 0}
+  - itemName: 
+    id: 0
+    icon: {fileID: 0}
+  - itemName: 
+    id: 0
+    icon: {fileID: 0}
+  - itemName: 
+    id: 0
+    icon: {fileID: 0}
+  - itemName: 
+    id: 0
+    icon: {fileID: 0}
+  - itemName: 
+    id: 0
+    icon: {fileID: 0}
+  - itemName: 
+    id: 0
+    icon: {fileID: 0}
+  - itemName: 
+    id: 0
+    icon: {fileID: 0}
 --- !u!1 &1769799432
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public ListItem[] inventory;
+    public ListItem[] inventory = new ListItem[10];
 
     private ListItemDB itemDataBase;
 
@@ -16,11 +16,11 @@ public class Player : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            itemDataBase.AddItem(0);
+            itemDataBase.AddItem(0, this);
         }
         else if(Input.GetKeyDown(KeyCode.R))
         {
-            itemDataBase.RemoveItem(0);
+            itemDataBase.RemoveItem(0, this);
         }
     }
 }
