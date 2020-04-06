@@ -32,4 +32,6 @@ public class FullTime : AbstractCha1
     {
         throw new System.NotImplementedException();
     }
+
+
 }
