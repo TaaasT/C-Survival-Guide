@@ -10,7 +10,7 @@ public interface IDamagable
 
 }
 
-public class Player : MonoBehaviour, IDamagable
+public class AbstractPlayer : MonoBehaviour, IDamagable
 {
     int IDamagable.Health { get; set; }
 
