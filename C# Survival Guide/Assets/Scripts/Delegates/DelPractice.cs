@@ -24,3 +24,20 @@ public class DelPractice : MonoBehaviour
     }
 
 }
+
+public class DelPractice2 : MonoBehaviour
+{
+    public Action onGetName;
+
+    private void Start()
+    {
+        // man kan ha flera saker i samma men då måste man ha curlybrackets och avsluta med ;
+        onGetName = () =>
+        {
+            Debug.Log("Name: " + gameObject.name);
+        };
+
+        onGetName();
+    }
+
+}
