@@ -60,3 +60,19 @@ public class DelPractice3 : MonoBehaviour
         return this.gameObject.name.Length;
     }*/
 }
+
+public class DelPractice4 : MonoBehaviour
+{
+    public Func<int, int, int> onCalculateSum;
+
+    private void Start()
+    {
+        onCalculateSum = (a, b) => a + b;
+        Debug.Log(onCalculateSum(5, 5));
+    }
+
+    int CalculateSum(int a, int b)
+    {
+        return a + b;
+    }
+}
