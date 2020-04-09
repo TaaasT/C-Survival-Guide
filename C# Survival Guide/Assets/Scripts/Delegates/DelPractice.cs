@@ -41,3 +41,22 @@ public class DelPractice2 : MonoBehaviour
     }
 
 }
+
+public class DelPractice3 : MonoBehaviour
+{
+    public Func<int> onGetname;
+
+    private void Start()
+    {
+        onGetname = () => this.gameObject.name.Length;
+
+        int charachterCount = onGetname();
+
+        Debug.Log("Character Count " + charachterCount);
+    }
+
+   /* int GetName()
+    {
+        return this.gameObject.name.Length;
+    }*/
+}
