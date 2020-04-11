@@ -9,7 +9,9 @@ public class LINQQuerys : MonoBehaviour
 
     void Start()
     {
-        var nameFound = names.Any(name => name == "jon");
+        // var nameFound = names.Any(name => name == "jon");
+
+        var nameFound = names.Contains("jon");
 
         Debug.Log("Name found: " + nameFound);
     }
