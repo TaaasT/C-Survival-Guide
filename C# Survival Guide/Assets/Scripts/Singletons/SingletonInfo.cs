@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class SingletonInfo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private static SingletonInfo instance;
+    public static SingletonInfo Instance
     {
-        
+        get
+        {
+            if(instance == null)
+            
+                Debug.LogError("The Gamemanager is NULL");
+
+                return instance;
+            
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        instance = this;
     }
+
 }
