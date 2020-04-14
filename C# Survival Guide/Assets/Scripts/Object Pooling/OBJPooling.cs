@@ -6,17 +6,17 @@ public class OBJPooling : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
 
-    void Start()
-    {
-        
-    }
 
-    
     void Update()
     {
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(bulletPrefab);
+            GameObject bullet = PoolManager.Instance.RequestBullet();
+            bullet.transform.position = Vector3.zero;
         }
+
+
+
     }
+
 }

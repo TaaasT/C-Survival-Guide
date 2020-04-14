@@ -45,4 +45,24 @@ public class PoolManager : MonoBehaviour
 
         return _bulletPool;
     }
+
+    public GameObject RequestBullet()
+    {
+        foreach(var bullet in _bulletPool)
+        {
+            if(bullet.activeInHierarchy == false)
+            {
+                bullet.SetActive(true);
+                return bullet;
+            }
+
+        }
+
+        GameObject newBullet = Instantiate(_bulletPrefab);
+        newBullet.transform.parent = _bulletContainer.transform;        
+        _bulletPool.Add(newBullet);
+
+        return newBullet;
+    }
+
 }
