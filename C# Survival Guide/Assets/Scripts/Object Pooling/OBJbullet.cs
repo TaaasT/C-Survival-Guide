@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class OBJbullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private void OnEnable()
     {
-        //Destroy(this.gameObject, 1f);
+        Invoke("Hide", 1);
     }
 
-    // Update is called once per frame
-    void Update()
+    void Hide()
     {
-        
+        this.gameObject.SetActive(false);
     }
 }
