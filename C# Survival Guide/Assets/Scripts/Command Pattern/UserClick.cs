@@ -22,8 +22,9 @@ public class UserClick : MonoBehaviour
             {
                 if(hitInfo.collider.tag == "Cube")
                 {
-                    hitInfo.collider.GetComponent<MeshRenderer>().material.color = new Color(
-                        Random.value, Random.value, Random.value);
+                    ICommand click = new ClickCommand(hitInfo.collider.gameObject, new Color(
+                        Random.value, Random.value, Random.value));
+                    click.Ececute();
                 }
             }
         }
