@@ -20,6 +20,6 @@ public class MoveLeftCommand : IICommand
 
     public void Undo()
     {
-        throw new System.NotImplementedException();
+        _player.Translate(Vector3.right * _speed * Time.deltaTime);
     }
 }

@@ -20,21 +20,25 @@ public class CPPlayer : MonoBehaviour
         {
             moveUp = new MoveUpCommand(this.transform, _speed);
             moveUp.Execute();
+            CCommandManager.Instance.AddCommand(moveUp);
         }
         else if(Input.GetKey(KeyCode.S))
         {
             moveDown = new MoveDownCommand(this.transform, _speed);
             moveDown.Execute();
+            CCommandManager.Instance.AddCommand(moveDown);
         }
         else if(Input.GetKey(KeyCode.A))
         {
             moveLeft = new MoveLeftCommand(this.transform, _speed);
             moveLeft.Execute();
+            CCommandManager.Instance.AddCommand(moveLeft);
         }
         else if(Input.GetKey(KeyCode.D))
         {
             moveRight = new MoveRightCommand(this.transform, _speed);
             moveRight.Execute();
+            CCommandManager.Instance.AddCommand(moveRight);
         }
     }
 }
